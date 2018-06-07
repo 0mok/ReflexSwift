@@ -26,7 +26,7 @@ public protocol DispatcherType: ObserverType {
 private var eventPublisherContext: UInt8 = 0
 private var dispatchPublisherContext: UInt8 = 0
 extension DispatcherType {
-    func on(_ event: Event<E>) {
+    public func on(_ event: Event<E>) {
         _eventPublisher.on(event)
     }
     

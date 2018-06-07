@@ -14,7 +14,7 @@ public protocol ActorType: ObserverType where E == Action {
 }
 
 extension ActorType {
-    private func on(_ event: Event<Action>) {
+    public func on(_ event: Event<Action>) {
         if case .next(let action) = event {
             onDispatch(action)
         }
