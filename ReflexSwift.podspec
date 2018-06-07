@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ReflexSwift"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "Unidirectional data flow architecture for RxSwift"
   s.homepage         = "https://github.com/glwithu06/ReflexSwift.git"
   s.license          = { :type => "MIT", :file => "LICENSE" }
