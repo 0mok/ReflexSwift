@@ -8,7 +8,7 @@
 
 import RxSwift
 
-public protocol ActorType: ObserverType where E == Action {
+public protocol ActorType: ObserverType where E == Action, Self : AnyObject {
     associatedtype Action
     func onDispatch(_ action: Action)
 }

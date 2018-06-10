@@ -16,7 +16,7 @@ public enum Dispatch<Action> {
     case void
 }
 
-public protocol DispatcherType: ObserverType {
+public protocol DispatcherType: ObserverType where Self : AnyObject {
     associatedtype Action
     
     var disposeBag: DisposeBag { get }
